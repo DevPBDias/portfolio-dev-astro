@@ -1,8 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
 import "../styles/global.css";
 ---
 
 <Layout title="Home | Portfolio DevPBDias">
-  <h1 class="font-bold">Olá Home</h1>
+  <main
+    class="p-4 flex flex-col lg:flex-row mt-12 gap-12 lg:gap-24 items-center justify-center"
+  >
+    <Hero />
+  </main>
 </Layout>
