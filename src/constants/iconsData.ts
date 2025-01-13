@@ -1,5 +1,5 @@
-import github from "../../public/assets/icons/github.png";
-import linkedin from "../../public/assets/icons/linkedin.png";
+import github from "../assets/icons/GithubLogo.png";
+import linkedin from "../assets/icons/LinkedinLogo.png";
 
 export interface IconsHeader {
   id: number;
@@ -10,12 +10,12 @@ export interface IconsHeader {
 export const iconsHeader: IconsHeader[] = [
   {
     id: 1,
-    icon: github,
     url: "https://github.com/DevPBDias",
+    icon: github,
   },
   {
     id: 2,
-    icon: linkedin,
     url: "https://www.linkedin.com/in/devpaulobrunomdias/",
+    icon: linkedin,
   },
 ];
