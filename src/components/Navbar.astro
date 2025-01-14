@@ -1,0 +1,13 @@
+---
+import { navLinks } from "../constants/navData";
+---
+
+<nav class="flex flex-row justify-between items-center space-x-4">
+  {
+    navLinks.map((item) => (
+      <a class="text-xl" href={`${item.path}`}>
+        {item.name}
+      </a>
+    ))
+  }
+</nav>

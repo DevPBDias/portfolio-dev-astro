@@ -1,0 +1,13 @@
+---
+import { iconsHeader } from "../constants/iconsData";
+---
+
+<div class="flex flex-row justify-between items-center">
+  {
+    iconsHeader.map((item) => (
+      <a class="link icon" href={`${item.url}`}>
+        <img class="w-full h-full" src={item.icon.src} alt={item.url} />
+      </a>
+    ))
+  }
+</div>

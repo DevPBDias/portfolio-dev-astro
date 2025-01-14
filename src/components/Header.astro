@@ -1,27 +1,11 @@
 ---
-import { iconsHeader } from "../constants/iconsData";
-import { navLinks } from "../constants/navData";
+import Icons from "./Icons.astro";
+import Navbar from "./Navbar.astro";
 ---
 
 <header class="p-4">
   <section class="flex flex-row justify-between items-center">
-    <nav class="flex flex-row justify-between items-center space-x-4">
-      {
-        navLinks.map((item) => (
-          <a class="text-xl" href={`${item.path}`}>
-            {item.name}
-          </a>
-        ))
-      }
-    </nav>
-    <div class="flex flex-row justify-between items-center">
-      {
-        iconsHeader.map((item) => (
-          <a class="w-6 h-6" href={`${item.url}`}>
-            <img class="w-full h-full" src={item.icon.src} alt={item.url} />
-          </a>
-        ))
-      }
-    </div>
+    <Navbar />
+    <Icons />
   </section>
 </header>
