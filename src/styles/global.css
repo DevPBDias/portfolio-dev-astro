@@ -3,13 +3,14 @@
   --text-color-primary: #fffcf2;
   --text-color-primary-soft: #e6e3db;
   --text-color-secondary: #111111;
-  --secondary: #f0a202;
+  --secondary: #ffd700;
   --text-color-terciary: #858786;
   --padding-header: 120px;
   --padding-content: 262px;
   --bg-soft: #2489e2;
   --bg-darker: #185e9b;
   --trybe: #21e54d;
+  --font-size-base: 16px;
 }
 
 body {
@@ -17,6 +18,32 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #004e92;
+  background-color: #0d1b2a;
   color: white;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+p,
+span,
+li,
+input,
+button {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+}
+
+h3,
+h4,
+h5,
+.subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  line-height: 1.4;
+}
+
+h1,
+h2,
+.title {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: 1.2;
+  font-weight: bold;
 }

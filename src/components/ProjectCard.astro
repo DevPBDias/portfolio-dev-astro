@@ -4,7 +4,7 @@ const { data } = Astro.props;
 ---
 
 <div
-  class="bg-blue-950 rounded-2xl p-2 shadow-xl flex flex-col justify-center items-center lg:hidden"
+  class="bg-[#1B2D44] rounded-2xl p-2 shadow-xl flex flex-col justify-center items-center lg:hidden"
 >
   <picture class="w-full h-72">
     <Image
@@ -25,7 +25,7 @@ const { data } = Astro.props;
     >
       {
         data?.techs.map((tech: string) => (
-          <p class="bg-[var(--bg-darker)] rounded-lg px-2 py-1 text-xs text-gray-300">
+          <p class="bg-[#326589] rounded-lg px-2 py-1 text-xs text-gray-300">
             {tech}
           </p>
         ))
