@@ -1,0 +1,73 @@
+---
+import Image from "astro/components/Image.astro";
+import timelineMobile from "../assets/images/TimelineMobile.png";
+import timeline from "../assets/images/Timeline.png";
+import { devStacks } from "../constants/stacksData";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Sobre | Portfolio DevPBDias">
+  <main
+    class="p-4 flex flex-col mt-12 gap-12 lg:gap-24 items-center justify-center bg"
+  >
+    <section class="flex flex-col justify-center items-start gap-6 w-full">
+      <h3 class="font-bold text-2xl">Um pouco da minha história ...</h3>
+      <div class="flex flex-col justify-between items-center gap-5">
+        <p class="text-[var(--text-color-primary-soft)] text-sm">
+          Um jovem de 32 anos formado, primeiramente, em engenharia civil pela
+          PUC-GO em 2017. Apaixonado em rock, basquete, filmes e animes. E que
+          resolveu fazer uma transição da engenharia para a área de tecnologia.
+          <br />
+          <br />
+          Minha decisão de transição de carreira ocorreu devido a pandemia e a crise
+          no setor de engenharia civil. Tive um desejo de buscar uma nova área de
+          atuação que fosse flexível podendo trabalhar remotamente, dinâmica e que
+          fosse uma área do futuro. E através das minhas pesquisas, encontrei em
+          uma propaganda no vídeo do canal da Nath Cury, uma escola de programação
+          que me despertou esse desejo.
+        </p>
+        <p class="text-[var(--text-color-primary-soft)] text-sm">
+          A minha trajetória no mundo da programação foi iniciada através da
+          escola Trybe. Comecei o curso em 2022 e finalizei em 2023, foi uma
+          caminhada desafiadora com noites longas e fins de semanas destinados
+          para aprender e treinar tecnologias de desenvolvimento web, além de
+          desenvolver projetos individuais e em grupo que serviam como provas.
+          Tudo era muito novo para mim, mas ao mesmo tempo muito prazeroso em
+          ver os projetos ganhando vida.
+          <br />
+          <br />
+          Minha contínua caminhada vem sendo trilhada com estudos de novas tecnologias
+          para me manter atualizado. Além, de desenvolver projetos pessoais e realizar
+          alguns trabalhos como freelancer.
+        </p>
+      </div>
+    </section>
+    <picture class="w-full my-28 flex justify-center items-center">
+      <Image
+        class="object-cover w-72 lg:hidden"
+        src={timelineMobile}
+        alt="timeline dev"
+      />
+      <Image
+        class="object-cover w-full hidden lg:block"
+        src={timeline}
+        alt="timeline dev"
+      />
+    </picture>
+    <section class="flex flex-col justify-center items-start gap-6 w-full">
+      <h3 class="font-bold text-2xl text-white">Habilidades:</h3>
+      <div class="flex flex-col justify-start items-center w-full gap-4">
+        {
+          devStacks &&
+            devStacks.map((stack) => (
+              <Image
+                class="lg:w-16 lg:h-16 w-12 h-11 md:w-14 md:h-13"
+                src={stack}
+                alt="stack dev"
+              />
+            ))
+        }
+      </div>
+    </section>
+  </main>
+</Layout>
