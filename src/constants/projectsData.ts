@@ -1,10 +1,10 @@
-import oleImg from "../assets/ole-midia.png";
-import coachImg from "../assets/coach-evertinho.png";
-import recipeApp from "../assets/recipeApp.png";
-import trivia from "../assets/trivia.png";
-import trybetunes from "../assets/trybetunes.gif";
-import walletPage from "../assets/walletPage.png";
-import trailersApp from "../assets/trailersApp.png";
+import oleImg from "../assets/gifs/olemida.gif";
+import coachImg from "../assets/gifs/maxtrainning.gif";
+import recipeApp from "../assets/images/recipeApp.png";
+import trivia from "../assets/images/trivia.png";
+import trybetunes from "../assets/gifs/trybetunes.gif";
+import walletPage from "../assets/images/walletPage.png";
+import trailersApp from "../assets/images/trailersApp.png";
 
 export interface ProjectData {
   id: number;

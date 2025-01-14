@@ -1,0 +1,51 @@
+---
+import Image from "astro/components/Image.astro";
+const { data } = Astro.props;
+---
+
+<div
+  class="bg-blue-950 rounded-2xl p-2 shadow-xl flex flex-col md:flex-row justify-center items-center lg:h-80 md:border-none"
+>
+  <picture class="w-full h-60 2xl:w-1/2 2xl:h-full">
+    <Image
+      class="w-full h-full rounded-lg object-cover"
+      src={data.image}
+      alt="Project image"
+    />
+  </picture>
+  <section
+    class="flex flex-col px-3 md:px-5 py-3 md:py-8 justify-between items-start gap-3 w-full 2xl:w-1/2 h-full"
+  >
+    <div class="flex flex-row justify-between items-center w-full">
+      <h4 class="text-lg md:text-xl font-semibold">{data.name}</h4>
+      <p class="border-[var(--bg-soft)] px-2 text-xs border-b-2">
+        {data.year}
+      </p>
+    </div>
+    <p class="text-xs text-[var(--text-color-terciary)]">
+      {data.inGroup ? "Em grupo" : "Individual"}
+    </p>
+    <p class="text-sm text-[var(--text-color-primary)]">
+      {data.description}
+    </p>
+    <section
+      class="flex flex-row flex-wrap justify-start items-start gap-2 mt-1 lg:mt-3"
+    >
+      {
+        data?.techs.map((tech: string) => (
+          <p class="bg-[var(--bg-darker)] rounded-lg px-2 py-1 text-xs">
+            {tech}
+          </p>
+        ))
+      }
+    </section>
+    <a
+      target="_blank"
+      rel="noreferrer noopener"
+      href={data.link}
+      class="flex w-full md:w-32 flex-row bg-[var(--secondary)] items-center justify-center py-1 px-2 rounded-lg mb-auto ml-auto gap-2"
+    >
+      <p class="text-[var(--text-color-secondary)] font-bold">Saiba mais</p>
+    </a>
+  </section>
+</div>

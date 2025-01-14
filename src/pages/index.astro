@@ -2,12 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import "../styles/global.css";
+import PinProjects from "../components/PinProjects.astro";
 ---
 
 <Layout title="Home | Portfolio DevPBDias">
   <main
-    class="p-4 flex flex-col lg:flex-row mt-12 gap-12 lg:gap-24 items-center justify-center"
+    class="p-4 flex flex-col mt-12 gap-12 lg:gap-24 items-center justify-center"
   >
     <Hero />
+    <PinProjects />
   </main>
 </Layout>
