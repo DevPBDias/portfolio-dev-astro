@@ -1,10 +1,12 @@
 ---
 import Icons from "./Icons.astro";
 import Navbar from "./Navbar.astro";
+import Photo from "./Photo.astro";
 ---
 
-<header class="p-4">
+<header class="absolute top-0 left-0 w-full p-4 lg:p-8 z-50">
   <section class="flex flex-row justify-between items-center">
+    <Photo />
     <Navbar />
     <Icons />
   </section>

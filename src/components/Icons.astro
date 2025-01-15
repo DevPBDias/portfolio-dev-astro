@@ -2,11 +2,15 @@
 import { iconsHeader } from "../constants/iconsData";
 ---
 
-<div class="flex flex-row justify-between items-center">
+<div class="flex flex-row justify-between items-center gap-4">
   {
     iconsHeader.map((item) => (
       <a class="link icon" href={`${item.url}`}>
-        <img class="w-full h-full" src={item.icon.src} alt={item.url} />
+        <img
+          class="w-full h-full hover:scale-125 "
+          src={item.icon.src}
+          alt={item.url}
+        />
       </a>
     ))
   }

@@ -18,8 +18,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #0d1b2a;
-  color: white;
+  background-color: #131212;
+  color: #fffcf2;
   font-size: var(--font-size-base);
   line-height: 1.6;
 }
@@ -29,21 +29,21 @@ span,
 li,
 input,
 button {
-  font-size: clamp(0.875rem, 1vw, 1rem);
+  font-size: clamp(0.8rem, 1vw, 1.1rem);
 }
 
 h3,
 h4,
 h5,
 .subtitle {
-  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   line-height: 1.4;
 }
 
 h1,
 h2,
 .title {
-  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.2;
   font-weight: bold;
 }
