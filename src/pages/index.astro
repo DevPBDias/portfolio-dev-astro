@@ -5,12 +5,14 @@ import "../styles/global.css";
 import PinProjects from "../components/PinProjects.astro";
 import Stacks from "../components/Stacks.astro";
 import About from "../components/About.astro";
+import BgHero from "../components/BgHero.astro";
 ---
 
 <Layout title="Home | Portfolio DevPBDias">
   <main
-    class="p-4 flex flex-col mt-12 gap-12 lg:gap-24 items-center justify-center"
+    class="relative flex flex-col gap-12 lg:gap-24 items-center justify-center"
   >
+    <BgHero />
     <Hero />
     <PinProjects />
     <About />
